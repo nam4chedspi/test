@@ -1,7 +1,8 @@
 <?php
 class Controller_Home extends Controller_Rest
 {
-    public function action_login(){
+    public function action_login()
+    {
 
         //check logged in
         // echo phpinfo();die;
@@ -28,7 +29,8 @@ class Controller_Home extends Controller_Rest
         return Response::forge($view);
     }
 
-    public function post_reset_password(){
+    public function post_reset_password()
+    {
         $response = array('success_flg'=>true, 'message'=>'sent');
         $row = User::reset_password(Input::post('company_id'),Input::post('employee_num'));
         if ($row){
