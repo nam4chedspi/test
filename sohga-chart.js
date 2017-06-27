@@ -24,7 +24,7 @@ $(function(){
 		var offsetLeft = 0;
 		var offsetTop = 0;
 		var colorIndex = [];
-
+		var xxx = false;
 		var processOrders = [[50,'グーグル',0,0,600]];
 		var processOrdersInput = processOrders.slice();
 
